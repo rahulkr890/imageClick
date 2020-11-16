@@ -1,22 +1,21 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <div *ngIf='flag'>
-    <div class='outer'>
-      <img (click)='flag=false' class='inner' width="300" alt="Angular Logo" src="../assets/FORTlogo.svg">
+  <div>
+    <div id='outer'>
+      <div  id='inner'>        
+      <img (click)='setFlag()' id='img' width="300" alt="Angular Logo" src="assets/FORTlogo.svg">
+      </div>
     </div>
     <div style="margin-top: 1%;color: gray;">
-      <label>Click above</label>
+      <label id='ca'>Click above</label>
     </div>
   </div>
-  <div *ngIf='!flag'>
-    <div style="margin-top: 42px;
-    margin-left: 636px;
-    color: gray;
-    position: absolute;">
-      <h3>Welcome</h3>
-    </div>
+  <div>
+    <!-- <div  id='outer'> -->
+      <h3 id='wel'>Welcome</h3>
+    <!-- </div> -->
     <div>
-      <img  class='outerRobo' (click)='flag=false' width="300" alt="Angular Logo" src="../assets/FORTrobo.png">
+      <img  id='outerRobo' width="300" alt="Angular Logo" src="assets/FORTrobo.png">
     </div>
   </div>
 </div>

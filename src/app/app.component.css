@@ -1,4 +1,4 @@
-.outer{
+#outer{
     width: 250px;
     height: 250px;
     border: 1px solid blue;
@@ -7,21 +7,49 @@
     margin-top: 100px;
 }
 
-.inner{
+
+#inner{
     background: blue;
     width: 200px;
     height: 200px;
     border-radius: 50%;
     position: absolute;
     padding: 10px;
-    margin-left: -110px;
+    margin-left: 15px;
     margin-top: 15px;
 }
 
-.outerRobo{
-    width: 250px;
+#outerRobo{
+    /* width: 250px;
     height: 250px;
     border: 2px dashed blue;
     border-radius: 50%;
+    margin-top: 100px; */
+    width: 218px;
+    height: 236px;
+    border: 0px;
+    /* border-width: 2px; */
+    border-radius: 50%;
     margin-top: 100px;
+    position: fixed;
+    /* top: 1%; */
+    left: 577px;
+    opacity:0;
+}
+
+#img{
+    width: 200px;
+    height: 200px;
+    /* border-radius: 50%; */
+    position: absolute;
+    padding: 10px;
+    margin-left: -110px;
+    top: 0px;
+}
+
+#wel{
+    opacity: 0;
+    top: 9%;
+    position: fixed;
+    left: 644px;
 }
