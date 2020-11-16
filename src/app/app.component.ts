@@ -25,10 +25,10 @@ export class AppComponent{
     },3000);
     let outer = document.getElementById('outer');
     outer.style.transition='3s';
-    document.getElementById('outer').style.border='2px dashed blue';
     setTimeout(()=>{       
       document.getElementById('outerRobo').style.opacity='1';
-      document.getElementById('outerRobo').style.top='1%';
+      document.getElementById('outerRobo').style.top='2%';
+      document.getElementById('outer').style.border='2px dashed blue';
       },3000);
       setTimeout(()=>{  
         this.rotate(3);
@@ -37,7 +37,7 @@ export class AppComponent{
 
   rotate(deg){
     document.getElementById('outer').style.transform='rotate('+deg+"deg"+')';
-      setTimeout(()=>{this.rotate(3+deg)},100)
+      setTimeout(()=>{this.rotate(3+deg)},1000)
     }
 }
 
